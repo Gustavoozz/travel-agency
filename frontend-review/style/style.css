@@ -12,6 +12,7 @@
 main {
     background: linear-gradient(to right,#1E52B4, #002777);
     overflow-x: hidden;
+
 }
 
 /* Scrollbar */
@@ -40,11 +41,11 @@ main {
 #logo-box {
     background: linear-gradient(to right,#1E52B4, #002777);
     height: 75px;
-    padding: 20px 300px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 900px;
+
 }
 
 .logo {
@@ -52,6 +53,9 @@ main {
     height: 23px;
     margin-top: 7px;
     margin-left: 80px;
+    
+    position: relative;
+    right: 310px;
 }
 
 .nav-box {
@@ -62,7 +66,7 @@ main {
     align-items: center;
     gap: 20px;
     position: relative;
-    right: 100px;
+    left: 250px;
 }
 
 .nav-links {
@@ -94,7 +98,7 @@ main {
     background: transparent;
     height: 351px;
     /* border: 1px solid red; */
-    width: 1600px;
+    width: auto;
 
     display: flex;
     align-items: center;
@@ -137,8 +141,18 @@ main {
     position: relative;
     left: 240px;
     top: 38px;
-
+    flex-direction: row;
     box-shadow: 4px 4px 10px 5px #00000026;
+}
+
+.photo-pin {
+    position: relative;
+    left: 30px;
+}
+
+.calendar {
+    position: relative;
+    left: 30px;
 }
 
 .task-title {
@@ -147,7 +161,7 @@ main {
     font-weight: 400;
     font-size: 16px;
     padding: 8px 70px 0px 40px;
-
+    
     border-right: 2px dotted #4E4B59;
     height: 40px;
 }
@@ -158,16 +172,44 @@ main {
     background-color: #009C3B;
     border-radius: 8px;
     border: 1px solid #009C3B;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .section-hotel {
     background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    /* border: 1px solid red; */
+    padding-right: 40px;
 }
 
+
 .card {
-    width: 260px;
-    border: 1px solid red;
+    width: 270px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+
+.card2 {
+    width: 270px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+
+.badge-state {
+    color: #FFDF00;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    width: 20px;
+
+    position: relative;
+    left: 240px;
+    bottom: 25px;
 }
 
 .travel {
@@ -179,6 +221,7 @@ main {
 .hotel-title {
     font-family: "Poppins", sans-serif;
     color: #4E4B59;
+    width: 130px;
     font-style: bold;
     font-size: 16px;
 }
@@ -186,7 +229,105 @@ main {
 .hotel-text {
     font-family: "Poppins", sans-serif;
     color: #4E4B59;
-    font-style: regular;
     font-weight: 500;
     font-size: 12px;
+    margin-bottom: 10px;
+
+    position: relative;
+    bottom: 10px;
 }
+
+.ad-section {
+        background-color: #FAFAFA;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-around;
+}
+
+.ad-box {
+    width: auto;
+}
+
+.img-travel {
+    margin-top: 50px;
+}
+
+.ad-text {
+    font-family: "Poppins", sans-serif;
+    color: #2E2636;
+    font-weight: 800;
+    font-size: 28px;
+
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.ad-subtext {
+    font-family: "Poppins", sans-serif;
+    color: #2E2636;
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.footer {
+    background-color: #009C3B;
+}
+
+.footer-box {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer-title {
+    font-family: "Poppins", sans-serif;
+    color:#FAFAFA;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.footer-text {
+    font-family: "Poppins", sans-serif;
+    color:#FAFAFA;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-subtext {
+    font-family: "Poppins", sans-serif;
+    color:#FAFAFA;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.footer-yellow {
+    background-color: #FFDF00;
+    text-align: center;
+}
+
+.footer-yellow-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 624px) {
+    main {
+    max-width: 100%;
+      padding-bottom: 20px;
+    }
+  
+    .logo {
+      width: 50px;
+      height: 30px;
+    }
+  
+  }
+  
+ 
