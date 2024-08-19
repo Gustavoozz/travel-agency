@@ -131,7 +131,7 @@
     }
 
     .task-bar {
-        width: auto;
+        width: 1024px;
         height: 80px;
         background-color:white;
         border-radius: 8px;
@@ -333,39 +333,37 @@
         }
 
         .task-bar {
-            width: 400px;
+            width: auto;
             height: 80px;
             background-color:white;
-            border-radius: 8px;
+            border-radius: 0px;
     
             display: flex;
             position: relative;
             left: 0px;
             top: 100px;
             margin-bottom: 100px;
-            align-items: center;
+            padding-right: 22px;
             flex-direction: row;
+
+
         }
 
         .task-title {
-            font-family: "Poppins", sans-serif;
-            color: #5F5C6B;
-            font-weight: 400;
-            font-size: 16px;
-            padding: 8px 70px 0px 40px;
-            height: 40px;
+            display: none;
+        }
+
+        .calendar {
+            display: none;
+        }
+
+        .photo-pin {
+            display: none;
         }
     
         .nav-box {
             flex-direction: column;
             gap: 10px;
-        }
-    
-        .task-bar {
-            flex-direction: column;
-            height: auto;
-            width: auto;
-            padding: 10px;
         }
     
         .section-main {
@@ -377,6 +375,8 @@
             margin-top: 20px;
             width: 100%;
         }
+        
+      
     
         .section-hotel {
             padding-right: 0;
